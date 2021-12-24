@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+a:focus {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 75px;
+  font-size: small;
+}
+
+.menu {
+  padding: 0 7.5px;
+}
+
+.links {
+  display: flex;
+  align-content: flex-end;
+}
+
+.link {
+  padding: 0 7.5px;
+  color: lightgray;
+}
+
+.landing {
+  position: relative;
+}
+
+.lawyer {
+  width: 100%;
+  filter: brightness(80%);
+}
+
+.landing-card {
+  width: 180px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(11, 60, 93, 255);
+  padding: 40px 25px;
+  position: absolute;
+  top: 50%;
+  left: 22.5%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-card-header {
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+.landing-card-header div:first-child {
+  font-size: 10px;
+}
+
+.landing-card-header div:nth-child(2) {
+  font-size: 22.5px;
+  line-height: 25px;
+}
+
+.landing-card-text {
+  color: rgba(250, 221, 22, 255);
+  font-style: italic;
+  font-size: 9px;
+  padding: 5px 0;
+}
+
+.form {
+  padding: 7.5px 0;
+}
+
+.form-inside {
+  background-color: rgba(228, 234, 237, 255);
+  border: 0cm;
+  width: 92.5%;
+  height: 25px;
+}
+
+.signup {
+  padding: 7.5px 0;
+}
+
+.signup-btn {
+  width: 100px;
+  padding: 10px 0px;
+  border: 0cm;
+  background-color: rgba(250, 221, 22, 255);
+  text-transform: uppercase;
+  font-size: 8px;
+  color: rgba(54, 47, 4, 255);
+}
+
+.features {
+  display: flex;
+  padding: 75px 35px;
+}
+
+.feature {
+  padding: 0 22.5px;
+}
+
+.feature-header {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.feature-text {
+  font-size: 10px;
+  color: gray;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(244, 244, 244, 255);
+  padding: 85px 0;
+}
+
+.quote-text {
+  text-transform: uppercase;
+  color: rgba(82, 82, 82, 255);
+  font-size: 15px;
+  margin: 0;
+}
+
+.quote-info {
+  font-size: 9px;
+}
+
+.quote-author {
+  font-weight: bold;
+  color: black;
+}
+
+.quote-autor-title {
+  color: rgba(82, 82, 82, 255);
+}
+
+.prices {
+  position: relative;
+  width: 100%;
+  height: 525px;
+}
+
+.prices::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://csci571.com/hw/hw3/images/glasses.png");
+  filter: grayscale(1) opacity(0.3);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prices-text {
+  text-align: center;
+  padding: 35px 0;
+}
+
+.prices-text div:first-child {
+  font-size: 13px;
+}
+
+.prices-text div:nth-child(2) {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 9px;
+  padding: 5px 0;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 50px;
+}
+
+.plan-card {
+  position: relative;
+  width: 175px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 25px;
+  text-align: center;
+}
+
+.plan-card::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://csci571.com/hw/hw3/images/grid.png");
+  filter: grayscale(1) opacity(15%);
+  background-size: cover;
+}
+
+.plan-card-inside {
+  padding: 25px 0;
+}
+
+.plan-title {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 12.5px 0;
+}
+
+.plan-text {
+  font-size: 10px;
+}
+
+.plan-feature {
+  padding: 5px 0;
+}
+
+.plan-price {
+  font-size: 17.5px;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+.buy-plan-btn {
+  padding: 12.5px 25px;
+  border: 0cm;
+  background-color: rgba(11, 60, 93, 255);
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+}
+
+.trial {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.trial::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 150%;
+  margin: -125px 0 0 -40px;
+  position: absolute;
+  background-image: url("https://csci571.com/hw/hw3/images/notebook.jpg");
+  filter: grayscale(1) brightness(150%) contrast(120%);
+  background-size: cover;
+}
+
+.trial-layer {
+  background-color: rgba(13, 50, 76, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trial-text {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.trial-text div:first-child {
+  text-transform: uppercase;
+  font-size: 19px;
+  color: white;
+}
+
+.trial-text div:nth-child(2) {
+  font-size: 9px;
+  color: white;
+  padding: 5px 0;
+}
+
+.trial-btn-container {
+  padding: 20px 0;
+}
+
+.trial-btn {
+  padding: 10px 20px;
+  background-color: rgba(250, 221, 22, 255);
+  font-size: x-small;
+  border: 0cm;
+  color: rgba(54, 47, 4, 255);
+}
+
+.footer {
+  background-color: rgba(29, 37, 48, 255);
+  text-align: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+}
+
+.footer h1 {
+  color: lightgray;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 4px 0;
+}
+
+.footer p {
+  color: gray;
+  font-size: 8px;
+  margin: 0;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.youtube,
+.googleplus {
+  width: 25px;
+  height: auto;
+  padding: 25px 10px;
+}
+
+.page2 {
+  height: 1500px;
+}
+
+#about,
+#projects,
+#services {
+  height: 50px;
+}
